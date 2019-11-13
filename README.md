@@ -16,7 +16,7 @@ Fingerprint2.get(function (components) {
 ```
 
 ### 采集依据
---大概是利用navatior.userAgent,canvas绘制拿base64,hash的算法,设备的系统语言,字体,一些device的参数......  
+--大概是利用navatior里的参数,canvas绘制拿base64,设备的系统语言,字体,一些device的参数,结合hash的算法,......  
 这里不一一解释了,在fingerprint2.js里面 你会发现这些关键参数
 ```js
 var components = [
