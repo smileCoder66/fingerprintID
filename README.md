@@ -57,5 +57,9 @@ var components = [
 ```
 
 
-### 引自
-(fingerprint2.js官方)[https://github.com/Valve/fingerprintjs2]
+### 最后
+```
+我自己测试发现: 正常情况下在设备上 切换浏览器跑 或者更改系统语言== id都是会被改变的 但好处是清除浏览器缓存不会被改变
+so,只要用户不换语言 老老实实用同个浏览器跑你的页面都算挺稳定的.
+```
+(引自fingerprint2.js官方)[https://github.com/Valve/fingerprintjs2]
