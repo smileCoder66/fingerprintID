@@ -8,15 +8,16 @@
 
 ```js
 Fingerprint2.get(function (components) {
+  //异步采集回调--
   var murmur = Fingerprint2.x64hash128(components.map(function (pair) {
     return pair.value
   }).join(), 31)
   //murmur 就是我们想要的生成设备的唯一标识ID.
-}
+})
 ```
 
 ### 采集依据
---大概是利用navatior里的参数,canvas绘制拿base64,设备的系统语言,字体,一些device的参数,结合hash的算法,......  
+--大概是利用navatior里的参数,canvas绘制拿base64,设备的系统语言,字体,一些device的参数,结合hash的md5算法,......  
 这里不一一解释了,在fingerprint2.js里面 你会发现这些关键参数
 ```js
 var components = [
@@ -59,7 +60,6 @@ var components = [
 
 ### 最后
 ```
-我自己测试发现: 正常情况下在设备上 切换浏览器跑 或者更改系统语言== id都是会被改变的 但好处是清除浏览器缓存不会被改变
-so,只要用户不换语言 老老实实用同个浏览器跑你的页面都算挺稳定的.
+有待测试……
 ```
 (引自fingerprint2.js官方)[https://github.com/Valve/fingerprintjs2]
