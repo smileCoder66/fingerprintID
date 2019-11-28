@@ -61,6 +61,7 @@ var components = [
 
 ### 最后
 ```
-有待测试……
+经测试,暂时测出同台设备在不同浏览器/系统语言 key会不一样,
+不同域的情况下获取的key也是相同的
 ```
 (引自fingerprint2.js官方)[https://github.com/Valve/fingerprintjs2]
